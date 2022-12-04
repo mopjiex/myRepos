@@ -9,11 +9,11 @@
 <body>
     <div class="main">
         <div class="header">
-            <a href="/">
+            <a href="#" class="en">
                 <span>EN</span>
             </a>
             <span>|</span>
-            <a href="/ru">
+            <a href="#"  class="ru">
                 <span>RU</span>
             </a>
         </div>
@@ -22,7 +22,7 @@
                 <img class="content__hello-img" src="./images/avatar.png" alt="Avatar">
                 <div class="content__hello-text">
                     <span class="content__name">
-                        <a href="/">Привет, я Илья Андрианов.</a>
+                        <a href="#">Привет, я Илья Андрианов.</a>
                     </span>
                     <span class="content__description"> Здесь вы найдете кто я и чем занимаюсь!</span>
                     <nav class="content__social">
@@ -63,9 +63,7 @@
                     </div>
                 </div>
                 
-              
-                <h1 class="content__about-header">Блоки</h1>
-                <h2 class="content__subheader">Текст</h2>
+                <h2 class="content__subheader">Обо мне</h2>
                 <div class="content__main-item">
                     <div class="main-item__description">
                         <p>Я проделал огромный путь к своей нынешней точке. С детства я понимал, что буду разработчиком. Не просто разработчиком, а Разработчиком. Мой путь заключается в том, чтобы делать все возможное для своих клиентов. Я всегда стараюсь выяснить настоящие причины неисправностей и найти лучшее решение. Я думаю не только о коде и его качестве, но и о бизнес-логике и удовлетворенности клиентов.</p>
@@ -90,6 +88,21 @@
                             <img src="./images/education/education-2.png" alt="">
                         </a>
                       </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="education" href="./images/education/education-3.png">
+                            <img src="./images/education/education-3.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="education" href="./images/education/education-4.png">
+                            <img src="./images/education/education-4.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="education" href="./images/education/education-5.png">
+                            <img src="./images/education/education-5.png" alt="">
+                        </a>
+                      </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -97,12 +110,12 @@
 
                 <h2 class="content__subheader">Проекты</h2>
                 <div class="content__main-item project">
-                    <a data-fslightbox href="./images/project/project-1.png">
+                    <a data-fslightbox="project" href="./images/project/project-1.png">
                         <img src="./images/project/project-1.png" alt="project1">
                     </a>
                     <div>
                         <div class="main-item__title">
-                            <a href="/ru/example/project.html"><span>Проект 1 - Ilandroxy Bot</span></a>
+                            <a href="/ru/example/project.html"><span class="projects">Проект 1 - Ilandroxy Bot</span></a>
                         </div>
                         <div class="main-item__description">
                             <p>
@@ -116,12 +129,12 @@
                     </div>
                 </div>
                 <div class="content__main-item project">
-                    <a data-fslightbox href="/assets/img/project2.png">
-                        <img src="/assets/img/project2.png" alt="project2">
+                    <a data-fslightbox="project" href="./images/project/project-2.png">
+                        <img src="./images/project/project-2.png" alt="project2">
                     </a>
                     <div>
                         <div class="main-item__title">
-                            <a href="/ru/example/project.html"><span>Проект 2 - Teletype</span></a>
+                            <a href="./images/project/project-2.png"><span class="projects">Проект 2 - Teletype</span></a>
                         </div>
                         <div class="main-item__description">
                             <p>
@@ -129,22 +142,22 @@
                             </p>
                         </div>
                         <div class="main-item__subdescription">
-                            <p class="main-item__links"><a href=""><span>Source Code</span></a><span>|</span><a href=""><span>Preview</span></a> </p>
+                            <p class="main-item__links"><a href="#"><span>Source Code</span></a><span>|</span><a href="#"><span>Preview</span></a> </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="content__main-item project">
-                    <a data-fslightbox href="/assets/img/project2.png">
-                        <img src="/assets/img/project2.png" alt="project2">
+                    <a data-fslightbox="project" href="./images/project/project-3.png">
+                        <img src="./images/project/project-3.png" alt="project2">
                     </a>
                     <div>
                         <div class="main-item__title">
-                            <a href="/ru/example/project.html"><span>Проект 3 - Авито репетиторство</span></a>
+                            <a href="/ru/example/project.html"><span class="projects">Проект 3 - Авито репетиторство</span></a>
                         </div>
                         <div class="main-item__description">
                             <p>
-                                Мой блог в телеграме.
+                                Мой профиль на Авито.
                             </p>
                         </div>
                         <div class="main-item__subdescription">
@@ -157,25 +170,64 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-1.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-1.png">
+                            <img src="./images/reviews/reviews-1.png" alt="">
+                        </a>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-2.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-2.png">
+                            <img src="./images/reviews/reviews-2.png" alt="">
+                        </a>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-3.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-3.png">
+                            <img src="./images/reviews/reviews-3.png" alt="">
+                        </a>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-4.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-4.png">
+                            <img src="./images/reviews/reviews-4.png" alt="">
+                        </a>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-5.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-5.png">
+                            <img src="./images/reviews/reviews-5.png" alt="">
+                        </a>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-6.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-6.png">
+                            <img src="./images/reviews/reviews-6.png" alt="">
+                        </a>
                       </div>
                       <div class="swiper-slide">
-                        <img src="../assets/img/reviews/reviews-7.png" alt="">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-7.png">
+                            <img src="./images/reviews/reviews-7.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-8.png">
+                            <img src="./images/reviews/reviews-8.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-9.png">
+                            <img src="./images/reviews/reviews-9.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-10.png">
+                            <img src="./images/reviews/reviews-10.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-11.png">
+                            <img src="./images/reviews/reviews-11.png" alt="">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a data-fslightbox="reviews" href="./images/reviews/reviews-12.png">
+                            <img src="./images/reviews/reviews-12.png" alt="">
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -183,63 +235,39 @@
                 </div>
 
 
-                <h2 class="content__subheader">Посты</h2>
-                <div class="content__main-item post">
-                    <article>
-                        <h2 class="main-item__title">
-                            <a href="#linktopost">Простая мысль</a>
-                        </h2>
-                        <p class="main-item__date">Ноя 22, 2022</p>
-                        <div class="main-item__description">
-                            <p>От одной свечи можно зажечь тысячи свечей, и срок службы свечи не сократится. Счастье никогда не уменьшается, когда им делятся.</p>
-                        </div>
-                    </article>
+                <h2 class="content__subheader">Прайс-лист</h2>
+                
+                <div class="content__main-item price">
+                    <a data-fslightbox="price" href="./images/price/price.png">
+                        <img src="./images/price/price.png" alt="">
+                    </a>
                 </div>
-                <div class="content__main-item post">
-                    <article>
-                        <h2 class="main-item__title">
-                            <a href="#linktopost">Простая мысль 2</a>
-                        </h2>
-                        <p class="main-item__date">Сен 13, 2022</p>
-                        <div class="main-item__description">
-                            <p>Больше заботьтесь о своем характере, чем о своей репутации, потому что ваш характер — это то, чем вы являетесь на самом деле, а ваша репутация — это просто то, что другие думают о вас.</p>
-                        </div>
-                    </article>
-                </div>
+                
             </div>
         </div>
         <div class="footer">
             <div>
-                <span>© Святослав Жиличев</span>
+                <span class="name">© Илья Андрианов</span>
             </div>
             <div>
                 <nav class="footer__social">
-                    <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="/assets/img/icons/twitter.svg" alt="Twitter">
+                    <a href="http://t.me/ilandroxy" target="_blank" class="footer__social-item">
+                        <img src="./images/icons/telegram.svg" alt="Telegram">
                     </a>
-                    <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="/assets/img/icons/facebook.svg" alt="Facebook">
+                    <a href="http://wa.me/message/JSXJ2NLWTVNFC1" target="_blank" class="footer__social-item">
+                        <img src="./images/icons/whatsapp.svg" alt="WhatsApp">
                     </a>
-                    <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="/assets/img/icons/in.svg" alt="LinkedIn">
+                    <a href="https://github.com/ilandroxxy" target="_blank" class="footer__social-item">
+                        <img src="./images/icons/github.svg" alt="GitHub">
                     </a>
-                    <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="/assets/img/icons/telegram.svg" alt="Telegram">
-                    </a>
+                   
                 </nav>
             </div>
         </div>
     </div>
     <script src="./js/fslightbox.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
 </body>
 </html>
