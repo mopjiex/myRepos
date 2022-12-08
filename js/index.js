@@ -63,38 +63,26 @@ let language = {
 }
 
 
+const switchLanguage = language => {
+    contentName.textContent = language.contentName;
+    contentDescription.textContent = language.contentDescription;
+    for(let i = 0; i < mainItemDescription.length; i++) {
+        mainItemDescription[i].textContent = language.mainItemDescription[i];
+    }
+    for(let i = 0; i < projects.length; i++) {
+        projects[i].textContent = language.projects[i];
+    }
+    for(let i = 0; i < contentSubheader.length; i++) {
+        contentSubheader[i].textContent = language.contentSubheader[i];
+    }
+    name.textContent = language.name;
+}
+
 const languageRu = document.querySelector('.ru');
 const languageEn = document.querySelector('.en');
 
-languageRu.addEventListener('click', () => {
-    contentName.textContent = language.ru.contentName;
-    contentDescription.textContent = language.ru.contentDescription;
-    for(let i = 0; i < mainItemDescription.length; i++) {
-        mainItemDescription[i].textContent = language.ru.mainItemDescription[i];
-    }
-    for(let i = 0; i < projects.length; i++) {
-        projects[i].textContent = language.ru.projects[i];
-    }
-    for(let i = 0; i < contentSubheader.length; i++) {
-        contentSubheader[i].textContent = language.ru.contentSubheader[i];
-    }
-    name.textContent = language.ru.name;
-})
-
-languageEn.addEventListener('click', () => {
-    contentName.textContent = language.en.contentName;
-    contentDescription.textContent = language.en.contentDescription;
-    for(let i = 0; i < mainItemDescription.length; i++) {
-        mainItemDescription[i].textContent = language.en.mainItemDescription[i];
-    }
-    for(let i = 0; i < projects.length; i++) {
-        projects[i].textContent = language.en.projects[i];
-    }
-    for(let i = 0; i < contentSubheader.length; i++) {
-        contentSubheader[i].textContent = language.en.contentSubheader[i];
-    }
-    name.textContent = language.en.name;
-})
+languageRu.addEventListener('click', () => {switchLanguage(language.ru)})
+languageEn.addEventListener('click', () => {switchLanguage(language.en)})
 
 
 
