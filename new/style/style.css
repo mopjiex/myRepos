@@ -101,6 +101,17 @@ body {
       color: #fff;
   }
 
+  .language__btn {
+    background-color: #fff;
+    transition: all .3s;
+  }
+
+  .language__btn:hover {
+    border-color: #fff;
+    background-color: #000;
+    color: #fff;
+  }
+
   .icons__menu-item img,
   .footer-icon__link img{
         filter: invert(1);
