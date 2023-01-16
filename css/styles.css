@@ -107,7 +107,10 @@ a:hover {
         color: #fff;
     }
 
-    .content__social-item img,
+    .menu__icons-link {
+        filter: invert(1);
+    }
+    
     .footer__social-item img{
         filter: invert(1);
     }

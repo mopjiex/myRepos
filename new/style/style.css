@@ -82,10 +82,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: #c8cbcd;
+  }
+
+  a {
+      color: #fff;
+  }
+
+  .icons__menu-item img,
+  .footer-icon__link img{
+        filter: invert(1);
+  }
+}
 
 .container {
   max-width: 800px;
@@ -149,7 +169,6 @@ body {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-
 }
 
 .icons__menu {
@@ -165,6 +184,7 @@ body {
 .menu__icons-link {
   display: flex;
   align-items: center;
+  gap: 0 3px;
   transition: all .3s;
 }
 
@@ -182,6 +202,7 @@ body {
   width: 22px;
   height: 22px;
 }
+
 
 /*-- //HEADER --*/
 
@@ -207,6 +228,10 @@ body {
 
 .about-me__text-link {
   font-weight: 700;
+}
+
+.about-me__text-link:hover {
+  text-decoration: underline;
 }
 
 .about-me__inner {
@@ -307,8 +332,8 @@ body {
 
 /*-- FOOTER --*/
 .footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer__inner {
