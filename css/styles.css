@@ -175,11 +175,44 @@ a:hover {
     display: flex;
     align-items: center;
 }
+
 .content__social-item img {
     width: 22px;
     height: 22px;
     margin-right: 4px;
 }
+
+
+ .content__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+} 
+
+
+.content__img {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 250px;
+}
+
+.content__img img {
+    width: 100%;
+    height: 250px;
+    
+}
+.content__images__text .main-item__description p {
+    margin-bottom: 10px;
+}
+
+.content__images__text .main-item__description p:last-child{
+    margin-bottom: 25px;
+}
+
 
 .content__about-header {
     font-size: 2.4rem;
